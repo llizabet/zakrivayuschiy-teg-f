@@ -241,7 +241,7 @@
   background-color: rgba(255, 255, 255, 1);
   border: 2px solid black;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -275,11 +275,10 @@ dialog[open] {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 30px; 
-  max-width: 100%; 
-  overflow-x: hidden; 
-  box-sizing: border-box; 
-  position: fixed; 
+  padding: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: fixed;
 }
 
 .dialog-titile {
@@ -396,8 +395,11 @@ dialog::backdrop {
   }
 
   dialog[open] {
-    padding: 30px 40px;
     width: 341px;
+  }
+
+  .dialog-titile {
+    margin-left: 10px;
   }
 
   .dialog-svg {
